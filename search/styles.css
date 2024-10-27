@@ -87,9 +87,10 @@ textarea {
 }
 
 .g-img {
-    width: 100%;
-    height: auto;
+    max-width: 75vw;
     display: block;
+    margin-top: -20px;
+    height: auto;
 }
 
 .image-text {
@@ -100,18 +101,14 @@ textarea {
     padding: 5px 10px;
     font-size: 28px;
 }
-.g-img{
-    margin-top: -20px;
-    height: 300px;
-}
-
 
 .search-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .search-form {
@@ -308,4 +305,69 @@ input.blue-button {
     float: right;
     padding: 7px 15px;
     margin: 0;
-  }
+}
+
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .nav-text-link {
+        font-size: 10px; /* Smaller font size for navigation links */
+        padding: 5px 10px; /* Reduced padding */
+    }
+    .nav-link{
+        font-size: 10px;
+        margin: 0 5px;
+    }
+    .nav-link svg {
+        width: 18px;  /* Smaller width for SVG */
+        height: 18px; /* Smaller height for SVG */
+    }
+
+    .nav-link img {
+        width: 20px;  /* Smaller width for images */
+        height: auto; /* Maintain aspect ratio for images */
+    }
+
+
+    .nav-bar {
+        flex-direction: column; /* Stack items vertically if desired */
+    }
+
+    .g-img {
+        height: auto;
+    }
+
+    .search-button {
+        font-size: 12px; /* Smaller button font size */
+        padding: 6px 12px; /* Adjust button padding */
+    }
+
+    .advanced-search-container label {
+        font-size: 14px; /* Smaller label font size */
+    }
+
+    /* Adjusting the search bar */
+    .search-bar {
+        border-radius: 50px; /* Maintain the same border radius */
+        padding: 4px 10px; /* Adjust padding */
+    }
+}
+@media (max-width: 400px) {
+    .nav-link{
+        font-size: 8px;
+        margin: 0 1px;
+    }
+    .nav-link svg {
+        width: 16px;  /* Smaller width for SVG */
+        height: 16px; /* Smaller height for SVG */
+    }
+
+    .nav-link img {
+        width: 18px;  /* Smaller width for images */
+        height: auto; /* Maintain aspect ratio for images */
+    }
+
+}
